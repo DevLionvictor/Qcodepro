@@ -1,4 +1,8 @@
+html, body{
+  background-color:whitesmoke;
+}
 .App {
+ 
   text-align: center;
 }
 
@@ -23,16 +27,182 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-body{
+  width: 100%;
+  padding:10%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .header{
+   display:flex;
+   background-color: #282c34;
+   align-items: center;
+   justify-content: space-between;
+   padding:20px;
+ }
+ 
+ .logo-box{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .inline-block{
+  display:inline-block;
 
+ }
+ .logo-title{
+   width:48px;
+   
+   color:white;
+    
+   
+   margin:0;
+ }
+ .logo-box .logo{
+   width:100px;
+   margin:0;
+
+ }
+ .card{
+   background-color: white;
+ }
 .App-link {
   color: #61dafb;
 }
+input, select, textarea{
+  width:100%;
+  padding:10px 12px;
+  margin-bottom: 5px;
+  border-radius:15px;
+  border:solid silver 1px;
+}
+.form-group{
+  text-align: left;
+}
+.form-group .label{
+  font-size: 12px;
+}
+.NewBox{
+  width:400px;
+  
+}
+button{
+  padding:13px 38px;
+  background-color: #2D8CFF;
+  border:0;
+  color:white;
+  font-weight: bold;
+  cursor:pointer;
+}
+.hint{
+  font-size:9px;
+  color:silver;
+}
+.grid{
+  display:flex;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
 
+}
+.grid .g-7{
+  width: 50%;
+}
+.grid .g-3{
+  width: 30%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.qcard-box{
+  width:400px;
+  height:400px;
+  overflow: scroll;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.colorPicker{
+  width:20px;
+  height: 20px;
+  padding: 2px;
+  border-radius:0;
+}
+.justify-spaced{
+  justify-content: space-between;
+}
+.hide{
+  display:none;
+}
+.mobile-only{
+  display:none;
+}
+.closeBut{
+  display:none;
+  cursor:pointer;
+}
+.foot{
+  margin-bottom: 50px;
+}
+.foot a{
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .desktop-only{
+    display:none;
+  }
+  .g-7{
+    width:100% !important;
+    padding:9px;
+  
+    box-sizing: border-box;
+  }
+  input{
+    box-sizing: border-box;
+  }
+  .App-body{
+    margin:0;
+    padding:0;
+  }
+  input, select, textarea{
+    width:100%;
+    padding:10px 12px;
+    margin-bottom: 5px;
+    border-radius:15px;
+    border:solid silver 1px;
+    box-sizing: border-box;
+
+    
+  }
+  .CodeCard{
+      width:400px;
+      height: 100vh;
+      display: block;
+      position: fixed;
+      top:0;
+      right:0;
+      background-color: white;
+  }
+  .g-3{
+    width:100% !important;
+  }
+  .closeBut{
+    position:fixed;
+    top:10px;
+    right:10px;
+    z-index:200;
+
   }
 }
