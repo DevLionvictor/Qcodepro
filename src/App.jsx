@@ -5,7 +5,7 @@ import New from './New'
 import Code from './Code';
 
 function App() {
-  const [displayCode, setDisplayCode] =useState(true);
+  const [displayCode, setDisplayCode] =useState(false);
   const [codeData, setcodeData] = useState({
     title: 'Hi Scam Me',
     value: 'Welcome Thanks for scanning me. i was Built by Vincent Victor COntact him on whatsapp +234',
