@@ -17,7 +17,7 @@ function App() {
 console.log(displayCode);
   return (
     <div className="App">
-      <div className="closeBut" onClick={() =>setDisplayCode(false)}>X Close</div>
+      {displayCode == true ? <div className="closeBut" onClick={() =>setDisplayCode(false)}>X Close</div> : ''}
       <header className="header">
         <div className="logo-box">
      

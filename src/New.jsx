@@ -54,8 +54,8 @@ function New({codeData, codeSession, displayState}){
                 <h2> New Code</h2>
                
                 
-                <select id="dataType" defaultValue="link" onChange={(e) => setType(e.target.value)}>
-                    <option value="note">Note</option>
+                <select id="dataType" defaultValue="note" onChange={(e) => setType(e.target.value)}>
+                    <option value="note" selected>Note</option>
                     <option value="contact">Contact</option>
                     <option value="link">Link</option>
                     
@@ -65,9 +65,11 @@ function New({codeData, codeSession, displayState}){
                   {NewForm()}
 
                 <p className="hint"> {codeValue} </p>
+                <p className="hint"> {bgColor} </p>
                 <h2>Style Settings </h2>
                <div className="flex justify-spaced">
                          <label>BG Color: </label>
+                         
                         <input type="color" onChange={(e) => setBgColor(e.target.value)} className="colorPicker"/>
                 </div>
                 <div className="flex justify-spaced">
